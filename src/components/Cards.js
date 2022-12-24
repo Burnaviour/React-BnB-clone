@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function Card(props) {
-  //   console.log(props);
   let badgeTetx;
   if (props.openSpots === 0) {
     badgeTetx = "SOLD OUT";
@@ -12,14 +11,14 @@ export default function Card(props) {
     <div className="card">
       {badgeTetx && <div className="card--badge">{badgeTetx}</div>}
       <img
-        src={`/images/${props.img}`}
+        src={`/images/${props.coverImg}`}
         className="card--image"
         alt="imageTag"
       />
       <div className="card--stats">
         <img src="/images/star.png" alt="star" className="card--star" />
-        <span>{props.rating}</span>
-        <span className="gray">({props.reviewCount}) • </span>
+        <span>{props.stats.rating}</span>
+        <span className="gray">({props.stats.reviewCount}) • </span>
         <span className="gray"> {props.location}</span>
       </div>
       <p>{props.title}</p>

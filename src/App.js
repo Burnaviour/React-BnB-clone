@@ -7,22 +7,11 @@ import Card from "./components/Cards";
 import data from "./data.js";
 
 export default function App() {
-  const DataArray = data.map((data) => (
-    <Card
-      key={data.id}
-      data={data}
-      // img={data.coverImg}
-      // rating={data.stats.rating}
-      // reviewCount={data.stats.reviewCount}
-      // location={data.location}
-      // title={data.title}
-      // price={data.price}
-      // openSpots={data.openSpots}
-    />
-  ));
+  const DataArray = data.map((data) => <Card key={data.id} {...data} />);
   return (
     <div>
       <Navbar />
+      <Hero />
       <section className="cards-list">{DataArray}</section>
     </div>
   );
