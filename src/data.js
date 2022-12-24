@@ -1,4 +1,4 @@
-export default [
+let data = [
   {
     id: 1,
     title: "lIFE IS ALL ABOUT FACINGHURDLES ",
@@ -57,3 +57,5 @@ export default [
     openSpots: 3,
   },
 ];
+
+export default data;
