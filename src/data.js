@@ -44,11 +44,11 @@ export default [
 
   {
     id: 4,
-    title: "Group Mountain Biking",
+    title: "Hotel Bokking",
     description:
       "Experience the beautiful Norwegian landscape and meet new friends all while conquering rugged terrain on your mountain bike. (Bike provided!)",
-    price: 50,
-    coverImg: "mountain-bike.png",
+    price: 1000,
+    coverImg: "hotel.jpg",
     stats: {
       rating: 4.8,
       reviewCount: 2,
